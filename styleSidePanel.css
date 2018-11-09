@@ -1,0 +1,167 @@
+.sidePanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF7F1;
+    overflow-x: hidden;
+    padding-top: 15px;
+    transition: 0.25s;
+}
+
+/* The navigation menu links */
+.sidePanel a {
+    width: 300px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #74777E;
+    display: block;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidePanel a:hover {
+    color: #FB9F5D;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidePanel img:hover {
+    background: radial-gradient(closest-side, #603F89, #FFFFFF00);
+}
+
+.userBox {
+    border-radius: 50px;
+    width: 300px;
+    padding: 8px 8px 8px 8px;
+    display: inline-flex;
+    align-items: center;
+    color: #445270;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: right;
+    transition: 0.25s;
+}
+
+.userBox:hover {
+    color: #FB9F5D;
+    background-color: #603F89
+}
+
+.userBoxAvatar {
+    pointer-events: none;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.userBoxUsername {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 250px;
+    pointer-events: none;
+    color: inherit;
+    width: 230px;
+    overflow-wrap: break-word;
+}
+
+.userBoxUsername:after {
+    content: "▼";
+    display: block;
+    float: right;
+    width: 1.2em;
+}
+
+#sidePanelButton {
+    color: #603F89;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 200%;
+    transition: 0.25s;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#sidePanelButton:hover {
+    color: #FB9F5D;
+}
+
+.sidePanel ul {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    list-style: none;
+    text-indent: -1.2em;
+}
+
+.sidePanel li {
+    width: 200px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidePanel li:before {
+    content: "►";
+    display: block;
+    float: left;
+    width: 1.2em;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.userBoxDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.userBoxDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #FFF7F1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.userBoxDropdownContent a {
+    text-decoration: none;
+    display: block;
+}
+
+.userBoxDropdownContent a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #74777E;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.userBoxDropdownContent a:hover {
+    color: #FB9F5D;
+    background-color: #603F89
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .userBoxDropdownContent container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+

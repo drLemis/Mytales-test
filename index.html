@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<title>MyTales</title>
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+	<link rel="stylesheet" href="styleFicInfo.css" />
+	<link rel="stylesheet" href="styleSidePanel.css" />
+</head>
+
+<body style="overflow-x: hidden;">
+	<div id="leftPanelNav" class="sidePanel">
+		<img src="img/logoMain.png" href="#" style="margin-left: 75px;cursor: pointer;" />
+		<button onclick="userBoxDropdown()" class="userBox">
+			<img class="userBoxAvatar" src="img/avatarRound.png" />
+			<label class="userBoxUsername">Павел Грудинин</label>
+		</button>
+		<div id="userBoxDropdown" class="userBoxDropdownContent">
+			<a href="#">💡 Профиль</a>
+			<a href="#">📰 Новости</a>
+			<a href="#">📝 Работы</a>
+			<a href="#">💾 Избранное</a>
+			<a href="#">🔧 Настройки</a>
+			<a href="#">🚪 Выйти</a>
+		</div>
+		<a href="#">Выйти из режима чтения</a>
+		<a href="#">Мои закладки</a>
+		<ul>
+			<li style="color:#550000">Кровь кишки гроб гроб кладбище</li>
+			<br>
+			<li style="color:#3333FF">Ядрёная гейщина</li>
+			<br>
+			<li style="color:#005500">Дочитать</li>
+		</ul>
+		<br>
+	</div>
+
+	<input type="button" id="sidePanelButton" value="☰" onclick="toggleNav()"></input>
+
+	<div id="main">
+		<div>
+			<center>
+				<div class="ficHeader">
+					<label class="ficTitle">Lorem ipsum dolor sit amet</label>
+					<label id="scoreLiked">+112</label>
+					<label id="scoreFavorited">88</label>
+					<hr style="margin-top:20px">
+					<div class="authors">
+						<button class="userBoxAuthors">
+							<img class="userBoxAuthorsAvatar" src="img/avatarRound.png" />
+							<div class="authorsRole">
+								<label class="userBoxAuthorsRole">Автор</label><br>
+								<label class="userBoxAuthorsUsername">Павел Грудинин</label>
+							</div>
+						</button>
+						<button class="userBoxAuthors">
+							<img class="userBoxAuthorsAvatar" src="img/avatarRound.png" />
+							<div class="authorsRole">
+								<label class="userBoxAuthorsRole">Соавтор</label><br>
+								<label class="userBoxAuthorsUsername">Грудинин Павел</label>
+							</div>
+						</button>
+						<button class="userBoxAuthors">
+							<img class="userBoxAuthorsAvatar" src="img/avatarRound.png" />
+							<div class="authorsRole">
+								<label class="userBoxAuthorsRole">Бета</label><br>
+								<label class="userBoxAuthorsUsername">Альфа Гамма</label>
+							</div>
+						</button>
+						<button class="userBoxAuthors">
+							<img class="userBoxAuthorsAvatar" src="img/avatarRound.png" />
+							<div class="authorsRole">
+								<label class="userBoxAuthorsRole">Бета</label><br>
+								<label class="userBoxAuthorsUsername">Чарли Зулу</label>
+							</div>
+						</button>
+					</div>
+				</div>
+		</div>
+		</center>
+		<hr>
+		<div class="ficInfo">
+			<div class="ficInfoFandoms">
+				<button class="ficInfoFandom">
+					<label class="ficInfoFandomTitle">Гарри Поттер</label>
+				</button>
+				<div class="vl"></div>
+				<button class="ficInfoFandom">
+					<label class="ficInfoFandomTitle">Звёздные войны</label>
+				</button>
+				<div class="vl"></div>
+				<button class="ficInfoFandom">
+					<label class="ficInfoFandomTitle">Видео с ютуба со смешными дядьками которые не пойми на что и как вообще живут</label>
+				</button>
+			</div>
+			<br>
+			<div class="ficInfoRating">
+				<label class="ficInfoRatingLabel">NC-17</label>
+				<div class="ficInfoWarnings">Предупреждения:
+					<div class="ficInfoWarning">Смерть главного героя</div>
+					<div class="ficInfoWarning">Смерть второстепенного персонажа</div>
+					<div class="ficInfoWarning">Арахис</div>
+					<div class="ficInfoWarning">Фенилаланин</div>
+				</div>
+				<br>
+			</div>
+			<br>
+			<div class="ficInfoStatus">
+				<b>Статус:</b><label id="completion">Завершён</label>
+				<b>Копирование:</b><label id="copying">С разрешения автора</label>
+			</div>
+			<br>
+			<div class="ficInfoStatus">
+				<div>
+					<b>Масштаб:</b><label id="size">30 страниц, 40000 слов, запланировано ультрамакси</label>
+				</div>
+			</div>
+			<br>
+			<div class="ficInfoAnnotation">
+				Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique senectus
+				et netus et malesuada fames ac turpis egestas. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor
+				varius. Proin in metus arcu. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+				hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+				pharetra vel, semper non risus.
+			</div>
+			<br>
+			<div class="ficInfoTags">
+				<div class="ficInfoTag">Какой-то тег</div>
+				<div class="ficInfoTag">Тег</div>
+				<div class="ficInfoTag">Тег с очень-очень длинным названием</div>
+				<div class="ficInfoTag">Другой тег</div>
+			</div>
+			<br>
+			<div class="ficInfoSocial">
+				<label class="ficInfoReviewsLabel">146 отзывов</label>
+				<label class="ficInfoFavoritedLabel">88 сохранили на полку</label>
+			</div>
+			<br>
+			<div class="ficInfoMisc">
+				<button class="ficInfoPrint">
+					<label class="ficInfoPrintLabel">Печать</label>
+				</button>
+				<button class="ficInfoFavorite">
+					<label class="ficInfoFavoriteLabel">На полку</label>
+				</button>
+			</div>
+		</div>
+		<hr style="margin-bottom:20px">
+		<div class="ficBodyText">
+			<article>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim nunc, aliquam sit amet quam vel,
+					aliquet
+					mollis lectus. Vestibulum rhoncus odio justo, sed rutrum lectus laoreet id. Ut non posuere felis. Aenean aliquet
+					ut
+					nunc ac posuere. Praesent dictum, arcu sit amet commodo tristique, est odio feugiat lacus, ac malesuada sem felis
+					non
+					nibh. Curabitur ipsum diam, congue id velit at, interdum tristique justo. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p>Proin sagittis tempor dolor, in pharetra velit pellentesque quis. In sit amet nulla pellentesque metus consequat
+					dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi nec
+					ultricies libero. Maecenas suscipit, lacus id gravida imperdiet, urna quam eleifend massa, nec accumsan diam
+					turpis
+					sed augue. Aliquam nec risus tortor. Vivamus ultricies mi nec odio auctor varius. Proin in metus arcu. Duis sed
+					commodo orci, nec dapibus eros. Etiam dignissim at arcu in placerat. Quisque tincidunt sapien eu lorem euismod
+					hendrerit. Nam porttitor tempus velit, ut pharetra purus gravida non. Mauris ipsum nisi, consectetur sit amet
+					pharetra vel, semper non risus. Ut facilisis, purus in tincidunt luctus, dui purus mollis velit, eget ullamcorper
+					arcu nisi nec massa.</p>
+			</article>
+		</div>
+	</div>
+</body>
+
+
+<script>
+	function toggleNav() {
+		if (document.getElementById("leftPanelNav").style.width != "300px") {
+			openNav();
+		} else {
+			closeNav();
+		}
+	}
+
+	/* Set the width of the side navigation to 300px and the left margin of the page content to 300px */
+	function openNav() {
+		document.getElementById("leftPanelNav").style.width = "300px";
+		document.getElementById("main").style.marginLeft = "300px";
+		document.getElementById("sidePanelButton").style.marginLeft = "300px";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+		document.getElementById("leftPanelNav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+		document.getElementById("sidePanelButton").style.marginLeft = "0px";
+	}
+
+
+	function userBoxDropdown() {
+		document.getElementById("userBoxDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function (event) {
+		if (!event.target.matches('.userBox')) {
+			var dropdowns = document.getElementsByClassName("userBoxDropdownContent");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+</script>
+
+</html>

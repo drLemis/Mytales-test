@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyr Medium';
+    src: url('font/HelveticaNeueCyr-Medium.eot');
+    src: url('font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('font/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #F9EADE;
+    font-family: "Helvetica Neue Cyr Medium";
+}
+
+button {
+    font-family: "Helvetica Neue Cyr Medium";
+}
+
+#main {
+    transition: margin-left .25s;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    min-width: 500px;
+    /* color: #445270; */
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#scoreLiked {
+    border-radius: 50px;
+    background: #603F89;
+    color: #F3F4F8;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+#scoreLiked:after {
+    content: " ▲";
+}
+
+#scoreFavorited {
+    border-radius: 50px;
+    background: #FB9F5D;
+    color: #F3F4F8;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+#scoreFavorited:after {
+    content: " ✪";
+}
+
+.ficTitle {
+    padding: 10px;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.userBoxAuthors {
+    border-radius: 50px;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    color: #445270;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+}
+
+.userBoxAuthors:hover {
+    color: #FB9F5D;
+    background-color: #603F89
+}
+
+.userBoxAuthorsRole {
+    display: inline-flex;
+}
+
+.userBoxAuthorsAvatar {
+    pointer-events: none;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.userBoxAuthorsUsername {
+    font-size: 14px;
+    padding: 5px;
+    padding-top: 0px;
+    float: left;
+    pointer-events: none;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+.userBoxAuthorsRole {
+    font-size: 10px;
+    padding-left: 5px;
+    color: #979AA1;
+    pointer-events: none;
+    float: left;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+.ficInfo {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ficInfoFandoms {
+    display: inline-flex;
+}
+
+.ficInfoFandom {
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    color: #445270;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+}
+
+.ficInfoFandom:hover {
+    color: #FB9F5D;
+    background-color: #603F89
+}
+
+.ficInfoFandomTitle {
+    font-size: 12px;
+    padding: 5px;
+    pointer-events: none;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+hr {
+    border: 0.5px solid #603F89;
+}
+
+.vl {
+    border-left: 1px solid #603F89;
+    margin: 5px;
+}
+
+.ficInfoRating {
+    display: inline-block;
+}
+
+.ficInfoRatingLabel {
+    /* font-size: 12px; */
+    padding: 3px;
+    margin-right: 10px;
+    pointer-events: none;
+    color: #445270;
+    border: 2px solid #D14F57;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+}
+
+.ficInfoWarnings {
+    display: inline;
+    overflow-wrap: break-word;
+}
+
+.ficInfoWarning {
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #D14F57;
+    background-color: #F3DECD;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+.ficInfoWarning:hover {
+    color: #F3DECD;
+    background-color: #D14F57
+}
+
+.ficInfoStatus {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+.ficInfoStatus #completion {
+    margin-left: 5px;
+    margin-right: 25px;
+    color: #278D8D;
+}
+
+.ficInfoStatus #copying {
+    margin-left: 5px;
+    margin-right: 25px;
+    color: #74777E;
+}
+
+.ficInfoStatus #size {
+    margin-left: 5px;
+    margin-right: 25px;
+    color: #74777E;
+}
+
+.ficInfoAnnotation {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    color: #74777E;
+}
+
+.ficInfoTags {
+    display: inline;
+    overflow-wrap: break-word;
+}
+
+.ficInfoTag {
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #278D8D;
+    background-color: #F3DECD;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+.ficInfoTag:hover {
+    color: #F3DECD;
+    background-color: #278D8D
+}
+
+
+.ficInfoSocial {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    float: left;
+    display: inline-flex;
+    overflow-wrap: break-word;
+}
+
+.ficInfoReviewsLabel {
+    padding: 10px;
+    pointer-events: none;
+    color: #445270;
+    overflow-wrap: break-word;
+}
+
+.ficInfoReviewsLabel:before {
+    content: "💬 ";
+}
+
+.ficInfoFavoritedLabel {
+    padding: 10px;
+    pointer-events: none;
+    color: #445270;
+    overflow-wrap: break-word;
+}
+
+.ficInfoFavoritedLabel:before {
+    content: "✪ ";
+}
+
+.ficInfoMisc {
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    float: right;
+    display: inline-flex;
+    overflow-wrap: break-word;
+}
+
+.ficInfoPrint {
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    color: #F3F4F8;
+    background-color: #603F89;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+}
+
+.ficInfoPrint:hover {
+    color: #278D8D;
+}
+
+.ficInfoPrintLabel {
+    font-size: 16px;
+    padding: 10px;
+    pointer-events: none;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+.ficInfoFavorite {
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    color: #F3F4F8;
+    background-color: #FB9F5D;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+}
+
+.ficInfoFavorite:hover {
+    color: #603F89;
+}
+
+.ficInfoFavoriteLabel {
+    font-size: 16px;
+    padding: 10px;
+    pointer-events: none;
+    color: inherit;
+    overflow-wrap: break-word;
+}
