@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyr Medium';
+    src: url('font/HelveticaNeueCyr-Medium.eot');
+    src: url('font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('font/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ficBodyHeader {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.ficBodyHeaderMain {
+    flex: 40;
+    display: block;
+}
+
+.ficBodyHeaderDate {
+    font-size: 75%;
+}
+
+.ficBodyHeaderName {
+    font-size: 150%;
+}
+
+.ficBodyHeaderNav {
+    font-size: 100%;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #278D8D;
+    background-color: #F3DECD;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    flex: 1;
+}
+
+.ficBodyHeaderNav:hover {
+    color: #F3DECD;
+    background-color: #278D8D
+}
+
+.ficBodyHeaderNavLabel {
+    color: inherit;
+    padding: 3px;
+    pointer-events: none;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+}

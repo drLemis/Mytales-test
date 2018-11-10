@@ -19,12 +19,17 @@ button {
 
 #main {
     transition: margin-left .25s;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top: 0px;
-    min-width: 500px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    padding-top: 0;
+    min-width: 32em;
     /* color: #445270; */
+}
+
+.nowrap {
+    white-space: nowrap;
+    display: inline;
 }
 
 .noselect {
@@ -37,10 +42,10 @@ button {
 }
 
 #scoreLiked {
-    border-radius: 50px;
+    border-radius: 3em;
     background: #603F89;
     color: #F3F4F8;
-    padding: 5px;
+    padding: 0.4em;
     white-space: nowrap;
 }
 
@@ -49,10 +54,10 @@ button {
 }
 
 #scoreFavorited {
-    border-radius: 50px;
+    border-radius: 3em;
     background: #FB9F5D;
     color: #F3F4F8;
-    padding: 5px;
+    padding: 0.4em;
     white-space: nowrap;
 }
 
@@ -61,14 +66,14 @@ button {
 }
 
 .ficTitle {
-    padding: 10px;
+    padding: 0.6em;
     font-size: 200%;
     font-weight: bold;
 }
 
 .userBoxAuthors {
-    border-radius: 50px;
-    padding: 8px;
+    border-radius: 3em;
+    padding: 0.5em;
     display: inline-flex;
     align-items: center;
     color: #445270;
@@ -91,15 +96,15 @@ button {
 
 .userBoxAuthorsAvatar {
     pointer-events: none;
-    height: 50px;
-    width: 50px;
+    height: 3em;
+    width: 3em;
     vertical-align: middle;
 }
 
 .userBoxAuthorsUsername {
-    font-size: 14px;
-    padding: 5px;
-    padding-top: 0px;
+    font-size: 120%;
+    padding: 0.4em;
+    padding-top: 0;
     float: left;
     pointer-events: none;
     color: inherit;
@@ -107,8 +112,8 @@ button {
 }
 
 .userBoxAuthorsRole {
-    font-size: 10px;
-    padding-left: 5px;
+    font-size: 80%;
+    padding-left: 0.5em;
     color: #979AA1;
     pointer-events: none;
     float: left;
@@ -118,8 +123,8 @@ button {
 
 .ficInfo {
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
 }
 
 .ficInfoFandoms {
@@ -127,10 +132,10 @@ button {
 }
 
 .ficInfoFandom {
-    border-radius: 50px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 3em;
+    margin-right: 0.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     display: flex;
     color: #445270;
     background-color: Transparent;
@@ -148,20 +153,20 @@ button {
 }
 
 .ficInfoFandomTitle {
-    font-size: 12px;
-    padding: 5px;
+    font-size: 90%;
+    padding: 0.4em;
     pointer-events: none;
     color: inherit;
     overflow-wrap: break-word;
 }
 
 hr {
-    border: 0.5px solid #603F89;
+    border: 0.04em solid #603F89;
 }
 
 .vl {
-    border-left: 1px solid #603F89;
-    margin: 5px;
+    border: 0.03em solid #603F89;
+    margin: 0.4em;
 }
 
 .ficInfoRating {
@@ -169,27 +174,26 @@ hr {
 }
 
 .ficInfoRatingLabel {
-    /* font-size: 12px; */
-    padding: 3px;
-    margin-right: 10px;
+    padding: 0.2em;
     pointer-events: none;
     color: #445270;
-    border: 2px solid #D14F57;
-    border-radius: 8px;
+    border: 0.1em solid #D14F57;
+    border-radius: 0.5em;
     overflow-wrap: break-word;
 }
 
 .ficInfoWarnings {
     display: inline;
     overflow-wrap: break-word;
+    vertical-align: middle;
 }
 
 .ficInfoWarning {
-    border-radius: 50px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
+    border-radius: 3em;
+    margin-right: 0.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    padding: 0.4em;
     display: inline-flex;
     align-items: center;
     color: #D14F57;
@@ -209,36 +213,36 @@ hr {
 }
 
 .ficInfoStatus {
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 0.6em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     display: inline-flex;
     overflow-wrap: break-word;
     vertical-align: middle;
 }
 
 .ficInfoStatus #completion {
-    margin-left: 5px;
-    margin-right: 25px;
+    margin-left: 0.4em;
+    margin-right: 1.5em;
     color: #278D8D;
 }
 
 .ficInfoStatus #copying {
-    margin-left: 5px;
-    margin-right: 25px;
+    margin-left: 0.4em;
+    margin-right: 1.5em;
     color: #74777E;
 }
 
 .ficInfoStatus #size {
-    margin-left: 5px;
-    margin-right: 25px;
+    margin-left: 0.4em;
+    margin-right: 1.5em;
     color: #74777E;
 }
 
 .ficInfoAnnotation {
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 0.6em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     display: inline-block;
     overflow-wrap: break-word;
     vertical-align: middle;
@@ -251,11 +255,11 @@ hr {
 }
 
 .ficInfoTag {
-    border-radius: 50px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
+    border-radius: 3em;
+    margin-right: 0.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    padding: 0.4em;
     display: inline-flex;
     align-items: center;
     color: #278D8D;
@@ -276,9 +280,9 @@ hr {
 
 
 .ficInfoSocial {
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 0.6em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     vertical-align: middle;
     float: left;
     display: inline-flex;
@@ -286,7 +290,7 @@ hr {
 }
 
 .ficInfoReviewsLabel {
-    padding: 10px;
+    padding: 0.6em;
     pointer-events: none;
     color: #445270;
     overflow-wrap: break-word;
@@ -297,7 +301,7 @@ hr {
 }
 
 .ficInfoFavoritedLabel {
-    padding: 10px;
+    padding: 0.6em;
     pointer-events: none;
     color: #445270;
     overflow-wrap: break-word;
@@ -308,9 +312,9 @@ hr {
 }
 
 .ficInfoMisc {
-    margin-right: 10px;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    margin-right: 0.6em;
+    margin-top: -0.6em;
+    margin-bottom: 0.6em;
     vertical-align: middle;
     float: right;
     display: inline-flex;
@@ -318,8 +322,8 @@ hr {
 }
 
 .ficInfoPrint {
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 0.4em;
+    margin: 0.4em;
     display: flex;
     color: #F3F4F8;
     background-color: #603F89;
@@ -336,16 +340,16 @@ hr {
 }
 
 .ficInfoPrintLabel {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 120%;
+    padding: 0.8em;
     pointer-events: none;
     color: inherit;
     overflow-wrap: break-word;
 }
 
 .ficInfoFavorite {
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 0.4em;
+    margin: 0.4em;
     display: flex;
     color: #F3F4F8;
     background-color: #FB9F5D;
@@ -362,8 +366,8 @@ hr {
 }
 
 .ficInfoFavoriteLabel {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 120%;
+    padding: 0.8em;
     pointer-events: none;
     color: inherit;
     overflow-wrap: break-word;
