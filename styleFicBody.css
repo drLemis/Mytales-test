@@ -8,6 +8,11 @@
     font-style: normal;
 }
 
+sup {
+    color:blue;
+    cursor: help;
+}
+
 .ficBodyHeader {
     display: flex;
     align-items: center;
@@ -57,4 +62,45 @@
     pointer-events: none;
     border-radius: 8px;
     overflow-wrap: break-word;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.05em dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltipText {
+    visibility: hidden;
+    width: 8em;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -4em; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-bottom: 0.2em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip .tooltipText::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -0.8em;
+    border-width: 0.4em;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltipText {
+    visibility: visible;
 }
